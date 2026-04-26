@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eGov-Task 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container container--header py-1 py-md-2">
+        <div class="d-flex align-items-center justify-content-end gap-3 flex-wrap top-bar__inner">
+          <a href="#" class="text-decoration-none top-bar__link static-proto" aria-disabled="true">Events</a>
+          <a href="#" class="text-decoration-none top-bar__link static-proto" aria-disabled="true">Contact us</a>
+          <div class="d-inline-flex align-items-center gap-1 top-bar__lang static-proto" aria-label="Language: English">
+            <img class="top-bar__flag" src="https://flagcdn.com/w20/gb.png" width="18" height="12" alt="" />
+            <span class="top-bar__lang-text">ENG</span>
+            <span class="top-bar__lang-chevron" aria-hidden="true">▾</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar main-nav navbar-expand-lg" aria-label="Main">
+      <div class="container container--header d-flex flex-wrap align-items-center position-relative">
+        <div class="navbar-brand d-flex align-items-center gap-0 py-0 me-2 flex-shrink-0">
+          <div class="brand-eGov d-flex align-items-start" aria-label="eGov Foundation home">
+            <span class="brand-e-glyph" aria-hidden="true" title="e"><span class="brand-e-inner">e</span></span>
+            <span class="brand-text d-flex flex-column text-start">
+              <span class="brand-gov">GOV</span>
+              <span class="brand-foundation">FOUNDATION</span>
+            </span>
+          </div>
+        </div>
+        <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse main-nav__collapse flex-grow-1" id="mainNav">
+          <div
+            class="d-flex flex-column flex-lg-row flex-wrap align-items-center justify-content-lg-end gap-2 w-100 my-3 my-lg-0 main-nav__cluster">
+            <ul
+              class="navbar-nav main-nav__links d-lg-flex flex-lg-row flex-lg-nowrap my-0 text-center text-lg-start align-items-lg-center justify-content-lg-end flex-wrap">
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">About Us
+                  <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">Areas of
+                  work <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">Products
+                  &amp; Solutions
+                  <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">Our Platform
+                  <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">Ecosystem
+                  <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+              <li class="nav-item main-nav__item">
+                <a href="#" class="nav-link main-nav__link d-inline-flex static-proto" aria-disabled="true">Resources
+                  <span class="nav-chevron" aria-hidden="true">▾</span></a>
+              </li>
+            </ul>
+            <div
+              class="main-nav__actions d-flex align-items-center justify-content-center justify-content-lg-end my-2 my-lg-0 flex-shrink-0">
+              <button type="button" class="btn p-0 search-btn" aria-label="Search" title="Search">
+                <svg class="search-ico" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M16.2 16.2 21 21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero section -->
+    <section class="hero position-relative" id="home" aria-label="Welcome">
+      <span id="latest" class="visually-hidden" aria-hidden="true"></span>
+      <div class="hero__wave" aria-hidden="true"></div>
+      <div class="hero__wave hero__wave--bottom" aria-hidden="true"></div>
+      <div class="container container--header position-relative z-1 py-5 py-lg-6">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 order-1 order-lg-1">
+            <h1 class="hero-title mb-2">
+              <span class="hero-title__line1">
+                <span class="hero-title__line1-row">20 years of digital transformation in</span>
+                <span class="hero-title__line1-row">public service delivery</span>
+              </span>
+              <span class="hero-title__line2">It&apos;s possible.</span>
+            </h1>
+            <p class="hero-lead mb-4">
+              Catalysts. Ecosystem enablers. Problem Solvers.
+              At eGov, we&rsquo;re driven by the power of open digital infrastructure and ecosystems to enable
+              governments to deliver accessible, inclusive and transparent services to every citizen.
+            </p>
+            <div class="d-flex flex-wrap gap-2 gap-sm-3 align-items-center">
+              <button type="button" class="btn btn-egov-teal btn-lg px-4 py-2 rounded-pill static-proto">Our
+                Approach</button>
+              <button type="button" class="btn btn-outline-egov btn-lg rounded-pill px-4 static-proto">Our
+                Impact</button>
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-2 text-center text-lg-end">
+            <div class="hero-img-wrap d-inline-block" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Product / feature section -->
+    <section class="py-5 py-lg-6 approaches-section" id="features" aria-labelledby="features-title">
+      <span id="stats" class="visually-hidden" aria-hidden="true"></span>
+      <div class="container">
+        <div class="approaches-shell">
+          <div class="row g-4 g-xl-5 align-items-start">
+            <div class="col-lg-4">
+              <h2 id="features-title" class="approaches-title">
+                <span class="approaches-title__line1">Big problems need</span>
+                <span class="approaches-title__line2">bold approaches</span>
+              </h2>
+              <p class="approaches-sub mb-4">Pick a program area. Statistics and resources update for each path.</p>
+              <div class="list-group feature-pills approaches-pill-wrap" id="feature-tabs" role="tablist"
+                aria-label="Program areas">
+                <button type="button" class="list-group-item list-group-item-action active feature-pill"
+                  id="tab-health-btn" data-bs-toggle="list" data-bs-target="#tab-health" role="tab"
+                  aria-controls="tab-health" aria-selected="true">
+                  Public Health
+                </button>
+                <button type="button" class="list-group-item list-group-item-action feature-pill feature-pill--ghost"
+                  id="tab-finance-btn" data-bs-toggle="list" data-bs-target="#tab-finance" role="tab"
+                  aria-controls="tab-finance" aria-selected="false">
+                  Public Finance
+                </button>
+                <button type="button" class="list-group-item list-group-item-action feature-pill feature-pill--ghost"
+                  id="tab-governance-btn" data-bs-toggle="list" data-bs-target="#tab-governance" role="tab"
+                  aria-controls="tab-governance" aria-selected="false">
+                  Local Governance
+                </button>
+                <button type="button" class="list-group-item list-group-item-action feature-pill feature-pill--ghost"
+                  id="tab-water-btn" data-bs-toggle="list" data-bs-target="#tab-water" role="tab"
+                  aria-controls="tab-water" aria-selected="false">
+                  Water &amp; Sanitation
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-health" role="tabpanel" aria-labelledby="tab-health-btn">
+                  <div class="row g-4 approach-cards align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--soft w-100">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--blue">210+</p>
+                          <p class="impact-slab__desc">cities LIVE with 10BedICU across India</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--soft">
+                          <span class="impact-slab__mega--soft">10BedICU</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--blue w-100 text-white">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--white">2 Bn</p>
+                          <p class="impact-slab__desc">COVID-19 vaccination certificates issued</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--blue">
+                          <span class="impact-slab__mega--white">Vaccination</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-finance" role="tabpanel" aria-labelledby="tab-finance-btn">
+                  <div class="row g-4 approach-cards align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--soft w-100">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--blue">5000+</p>
+                          <p class="impact-slab__desc">rural local bodies managing revenue &amp; expenditure on Water
+                            Supply O&amp;M System</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--soft">
+                          <span class="impact-slab__mega--soft">O&amp;M</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--blue w-100 text-white">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--white">4000+</p>
+                          <p class="impact-slab__desc">empowered women Self Help Groups through Social Benefits Delivery
+                            System</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--blue">
+                          <span class="impact-slab__mega--white">SHG</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-governance" role="tabpanel" aria-labelledby="tab-governance-btn">
+                  <div class="row g-4 approach-cards approach-cards--mosaic align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--soft impact-slab--tall w-100">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--blue">70%</p>
+                          <p class="impact-slab__desc">improved quality of life with implementations in Punjab, India
+                          </p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex flex-column gap-3 h-100">
+                        <article class="impact-slab impact-slab--soft-alt impact-slab--compact w-100">
+                          <div class="impact-slab__head">
+                            <p class="impact-slab__stat--blue">250%</p>
+                            <p class="impact-slab__desc">increase in revenue mobilisation in Andhra Pradesh using the
+                              DIGIT Platform</p>
+                            <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                          </div>
+                        </article>
+                        <article class="impact-slab impact-slab--blue impact-slab--compact w-100 text-white">
+                          <div class="impact-slab__head">
+                            <p class="impact-slab__stat--white">UPYOG</p>
+                            <p class="impact-slab__desc">National Urban Governance Platform LIVE in India for all
+                              states.</p>
+                            <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-water" role="tabpanel" aria-labelledby="tab-water-btn">
+                  <div class="row g-4 approach-cards align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--soft w-100">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--blue">148Mn</p>
+                          <p class="impact-slab__desc">households with access to drinking water on tap, maintained on
+                            systems powered by the DIGIT platform</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--soft">
+                          <span class="impact-slab__mega--soft">Households</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                      <article class="impact-slab impact-slab--blue w-100 text-white">
+                        <div class="impact-slab__head">
+                          <p class="impact-slab__stat--white">DPI</p>
+                          <p class="impact-slab__desc">for Sanitation: a reimagined approach led by DPI thinking</p>
+                          <span class="impact-slab__btn impact-slab__btn--static">Read More</span>
+                        </div>
+                        <div class="impact-slab__foot--blue">
+                          <span class="impact-slab__mega--white">Sanitation</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CTA section -->
+    <section class="digit-section text-white py-5 py-lg-6" id="cta" aria-labelledby="digit-title">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 order-lg-1 order-2">
+            <div class="digit-brand" aria-label="DIGIT by eGov Foundation">
+              <span class="digit-brand__icon" aria-hidden="true">
+                <span class="digit-brand__dot digit-brand__dot--blue"></span>
+                <span class="digit-brand__dot digit-brand__dot--yellow"></span>
+                <span class="digit-brand__dot digit-brand__dot--teal"></span>
+                <span class="digit-brand__dot digit-brand__dot--teal"></span>
+                <span class="digit-brand__dot digit-brand__dot--blue"></span>
+                <span class="digit-brand__dot digit-brand__dot--teal"></span>
+              </span>
+              <span class="digit-brand__text-wrap">
+                <span class="digit-brand__name">DIGIT</span>
+                <span class="digit-brand__by">by eGov Foundation</span>
+              </span>
+            </div>
+            <h2 id="digit-title" class="digit-title">
+              <span class="digit-title__line">Our open source</span>
+              <span class="digit-title__line"><span class="digit-title__em">technology-for-good</span> platform</span>
+            </h2>
+            <p class="digit-lead">
+              DIGIT, short for Digital Infrastructure for Governance, Inclusion and Transformation is eGov&rsquo;s
+              open-source platform with reusable building blocks and shared data registries that can be used to build
+              solutions in multiple sectors.
+            </p>
+            <button type="button" class="btn btn-lg btn-white-pill static-proto">Explore the platform</button>
+          </div>
+          <div class="col-lg-6 text-center order-lg-2 order-1">
+            <img class="img-fluid cta-img digit-section__img"
+              src="https://placehold.co/600x420/0d3a5c/94a3b8/png?text=Platform" width="600" height="420" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. Footer -->
+  <footer id="footer" class="site-footer-wf mt-auto">
+    <div class="footer-upper-wf">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand-wf mb-3">
+              <span class="footer-brand-wf__e" aria-hidden="true">e</span><span class="footer-brand-wf__gov"
+                aria-hidden="true">GOV</span>
+              <span class="footer-brand-wf__found d-block">FOUNDATION</span>
+            </div>
+            <p class="footer-tagline-wf">
+              Catalysing digital transformation in public service delivery at speed &amp; scale.
+            </p>
+            <ul class="footer-social-wf list-unstyled mb-0" aria-label="Social">
+              <li>
+                <a href="#" class="footer-social-wf__link static-proto" role="img" aria-label="Facebook">
+                  <i class="bi bi-facebook footer-social-wf__icon footer-social-wf__icon--fb" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-wf__link static-proto" role="img" aria-label="X">
+                  <i class="bi bi-twitter-x footer-social-wf__icon footer-social-wf__icon--x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-wf__link static-proto" role="img" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin footer-social-wf__icon footer-social-wf__icon--in" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-wf__link static-proto" role="img" aria-label="YouTube">
+                  <i class="bi bi-youtube footer-social-wf__icon footer-social-wf__icon--yt" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="footer-heading-wf">Useful Links</h3>
+            <div class="row useful-links-wf g-0">
+              <div class="col-6 pe-2">
+                <ul class="list-unstyled useful-links-wf__list">
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">Home</a></li>
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">Our Impact</a></li>
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">DIGIT Sandbox</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled useful-links-wf__list">
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">Our People</a></li>
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">Financials</a></li>
+                  <li><a href="#" class="useful-links-wf__a static-proto" aria-disabled="true">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h3 class="footer-heading-wf">Subscribe Now</h3>
+            <p class="footer-subscribe-wf__intro mb-2">
+              Receive regular updates of our monthly newsletter DOT &ndash; in your inbox.
+            </p>
+            <form class="footer-subscribe-wf" novalidate onsubmit="return false" action="">
+              <label class="visually-hidden" for="sub-email">Email</label>
+              <div class="footer-subscribe-wf__field">
+                <input id="sub-email" name="your-email" type="email" class="footer-subscribe-wf__input"
+                  placeholder="Enter Your Email" autocomplete="off" inputmode="email" />
+                <button class="footer-subscribe-wf__btn" type="button" aria-label="Submit subscription"
+                  title="Subscribe">
+                  <svg class="footer-subscribe-wf__envelope" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="19" height="14" rx="1" stroke="currentColor" stroke-width="1.1" />
+                    <path d="M1.5 2.5L9.2 7.1c.5.3 1.1.3 1.6 0L18.5 2.5" stroke="currentColor" stroke-width="1.1"
+                      stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-lower-wf">
+      <div
+        class="container footer-lower-wf__row d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 py-3">
+        <p class="footer-lower-wf__copy mb-0">&copy;2024. eGov. All Rights Reserved.</p>
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-2 gap-md-3">
+          <a href="#" class="footer-lower-wf__link static-proto" aria-disabled="true">Privacy Policy</a>
+          <a href="#" class="footer-lower-wf__link static-proto" aria-disabled="true">Terms and Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const nav = document.querySelector(".main-nav");
+      if (!nav) return;
+
+      let stickyStartY = 0;
+
+      const recalcStickyMetrics = function () {
+        const rect = nav.getBoundingClientRect();
+        stickyStartY = rect.top + window.scrollY;
+        document.body.style.setProperty("--main-nav-fixed-height", rect.height + "px");
+      };
+
+      const toggleStickyState = function () {
+        const shouldStick = window.scrollY >= stickyStartY;
+        nav.classList.toggle("is-sticky", shouldStick);
+        document.body.classList.toggle("navbar-fixed-active", shouldStick);
+      };
+
+      recalcStickyMetrics();
+      toggleStickyState();
+      window.addEventListener("resize", function () {
+        recalcStickyMetrics();
+        toggleStickyState();
+      });
+      window.addEventListener("scroll", toggleStickyState, { passive: true });
+    })();
+  </script>
+</body>
+
+</html>
